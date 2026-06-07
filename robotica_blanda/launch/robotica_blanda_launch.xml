@@ -1,0 +1,7 @@
+<launch>
+    <!--Abre una nueva terminal donde comienza la comunicación con el esp32 usando el agente de micro ros-->
+    <executable cmd="terminator -e 'cd ~/ros/TFG_ws; ./src/robotica_blanda/exe/MicroRos.sh; exec bash'" />
+    
+    <!--Ejecuta el programa de python que genera la interfaz gráfica de control del sistema-->
+    <executable cmd="python3 ~/ros/TFG_ws/src/robotica_blanda/exe/interfazgrafica.py" />
+</launch>

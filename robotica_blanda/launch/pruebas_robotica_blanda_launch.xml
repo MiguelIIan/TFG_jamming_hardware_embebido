@@ -1,0 +1,7 @@
+<launch>   
+    <!--Abre una nueva terminal y ejecuta un archivo de shell que ejecuta el nodo de control de teclas-->
+    <executable cmd="terminator -e 'cd ~/ros/TFG_ws; ./src/robotica_blanda/exe/ControlTeclas.sh; exec bash'" />
+    
+    <!--Comienza la comunicación con el esp32 usando el agente de micro ros  -->
+    <executable cmd="terminator -e 'cd ~/ros/TFG_ws; ./src/robotica_blanda/exe/MicroRos.sh; exec bash'" />  
+</launch>
